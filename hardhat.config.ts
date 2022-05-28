@@ -17,6 +17,15 @@ function getRemappings() {
 task("example", "Example task").setAction(example);
 
 const config: HardhatUserConfig = {
+  defaultNetwork: "hardhat",
+  networks: {
+    hardhat: {
+    },
+    rinkeby: {
+      url: "https://eth-rinkeby.alchemyapi.io/v2/123abc123abc123abc123abc123abcde",
+      // accounts: [privateKey1, privateKey2]
+    }
+  },
   solidity: {
     version: "0.8.13",
     settings: {
