@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "npx hardhat clean",
     "test:hh": "npx hardhat test",
-    "test:forge": "forge test -vvv",
+    "test:forge": "forge test --gas-report -vvv",
     "compile": "npx hardhat compile",
     "build": "forge build",
     "coverage": "npx hardhat coverage --config ./hardhat.config.ts --solcoverjs config.solcover.js",
